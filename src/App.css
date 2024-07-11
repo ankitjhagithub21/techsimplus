@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  font-family: "Chivo", sans-serif;
+  outline: none;
+}
+
+.custom-shadow{
+  box-shadow: 14px 14px 36px hsla(0, 0%, 60%, .22);
+}
