@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
-import {FaLinkedin,FaFacebook,FaTwitter,FaInstagram} from "react-icons/fa"
+import {FaFacebook,FaTwitter,FaInstagram} from "react-icons/fa"
+import {FaLinkedinIn} from "react-icons/fa6"
 const Footer = () => {
   return (
     <footer>
@@ -42,13 +43,13 @@ const Footer = () => {
         </div>
       </div>
       <div className='container mx-auto p-5  flex flex-wrap gap-3 justify-between items-center'>
-        <div className='flex gap-5 font-bold text-gray-500'>
+        <div className='flex gap-5 flex-wrap font-bold text-gray-500  '>
           <p >© TechSimPlus Official 2024</p>
           <p>Privacy Policy</p>
         </div>
-        <div className='flex items-center gap-2'>
+        <div className='flex items-center gap-3'>
           <div className='rounded-full bg-[#5CA1A8] p-2 text-2xl text-white'>
-            <FaLinkedin/>
+            <FaLinkedinIn/>
           </div>
           <div className='rounded-full bg-[#5CA1A8] p-2 text-2xl text-white'>
             <FaFacebook/>
