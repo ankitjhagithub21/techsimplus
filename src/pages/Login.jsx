@@ -1,18 +1,18 @@
-import React from 'react'
 import { FaFingerprint,FaGoogle } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
+
 const Login = () => {
     return (
         <section className='pb-12 px-5'>
-            <div className='lg:w-1/2 mx-auto w-full p-5 flex flex-col'>
+            <div className='lg:w-1/2 mx-auto w-full lg:p-5 flex flex-col'>
                 <div className='my-5 text-center px-4'>
                     <h1 className='text-4xl font-bold'>Login Your Account</h1>
-                    <p className='text-gray-600 mt-1'>Hi Dear, Enter your email address and password, and start your learning journey.</p>
+                    <p className='mt-1'>Hi Dear, Enter your email address and password, and start your learning journey.</p>
 
 
                 </div>
 
-                <div className='rounded-xl custom-shadow flex flex-col justify-center items-center gap-5  p-10'>
+                <div className='rounded-xl custom-shadow flex flex-col justify-center items-center gap-5 lg:p-10 p-5'>
                     <div className='w-full'>
                         <label htmlFor="email" className='mb-2'>Email Address<span className='text-red-500'>*</span></label>
                         <div className='flex items-center gap-4 p-3 custom-shadow rounded-2xl border'>

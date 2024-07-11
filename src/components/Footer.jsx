@@ -23,8 +23,8 @@ const Footer = () => {
       <div className='container mx-auto p-5 flex flex-wrap'>
         <div className='flex flex-col lg:w-1/4 w-full p-5'>
           <h2 className='font-bold mb-5 text-xl'>Contact</h2>
-          <p className='text-gray-600'>2nd Floor, 53 - C, Near Yadav Tea Stall, Indrapuri, Bhopal - 462021</p>
-          <div className='text-gray-600 mt-5'>
+          <p className=''>2nd Floor, 53 - C, Near Yadav Tea Stall, Indrapuri, Bhopal - 462021</p>
+          <div className=' mt-5'>
             <p>+91 98937-62256</p>
             <p>training@techsimplus.com</p>
             <p>TechSimPlus Learnings is a subsidiary of Desprin</p>
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
         <div className='flex flex-col gap-5 lg:px-10 px-5 lg:w-3/4 w-full flex-wrap'>
           <h2 className='font-bold text-xl mb-5'>About Us</h2>
-          <div className='flex gap-5 text-gray-600 flex-wrap'>
+          <div className='flex gap-5  flex-wrap'>
             <span>Blogs</span>
             <span>Events</span>
             <span>Mission & Vission</span>
