@@ -8,3 +8,16 @@
 .custom-shadow{
   box-shadow: 14px 14px 36px hsla(0, 0%, 60%, .22);
 }
+
+nav{
+  animation: navAnim 0.5s linear;
+}
+
+@keyframes navAnim {
+  0%{
+    transform:translateY(-100%) ;
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
