@@ -5,7 +5,7 @@ const Review = () => {
     const {isDarkMode} = useContext(ThemeContext)
   return (
     <div className='lg:w-1/3 md:w-1/2 w-full my-5 p-3 relative'>
-    <div className={`rounded-xl ${isDarkMode ? 'bg-white text-gray-900':'bg-gray-900 text-white'} p-8`}>
+    <div className={`rounded-xl ${isDarkMode && 'text-gray-900'} bg-gray-100 shadow-lg p-8`}>
         <div className='absolute -top-5 flex items-center'>
             <img src="https://ankitjha.vercel.app/profile.png" alt="student" className='w-12 rounded-full' />
             <div>
