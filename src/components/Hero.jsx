@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaPlay } from "react-icons/fa";
 import {ThemeContext} from "../context/ThemeContext"
+import { Link } from 'react-router-dom';
 const Hero = () => {
     const {isDarkMode} = useContext(ThemeContext)
     return (
@@ -16,11 +17,11 @@ const Hero = () => {
 
                     Get real time working-experience as top tech developers.</p>
                     <div className='flex items-center flex-wrap mt-5 justify-center gap-5'>
-                        <button className={`rounded-full flex items-center gap-3 lg:px-8 text-lg font-semibold leading-relaxed px-4 py-2 ${isDarkMode ?'bg-white text-gray-900':'bg-gray-900 text-white'}`}>
+                        <Link className={`rounded-full flex items-center gap-3 lg:px-8 text-lg font-semibold leading-relaxed px-4 py-2 ${isDarkMode ?'bg-white text-gray-900':'bg-gray-900 text-white'}`} to={"/register"}>
                             Register Now 
                             
                             <FaArrowRightLong/>
-                        </button>
+                        </Link>
                         <button className='text-lg leading-relaxed flex items-center gap-3'>
                             <FaPlay color='#006D77'/>
                             Explore our programs

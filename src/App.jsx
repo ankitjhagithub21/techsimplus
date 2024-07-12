@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import Login from './pages/Login'
 import Footer from './components/Footer'
 import { ThemeContext } from './context/ThemeContext'
+import Register from './pages/Register'
 
 const App = () => {
  const {isDarkMode} =useContext(ThemeContext)
@@ -17,6 +18,7 @@ const App = () => {
 
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
       </Routes>
       <Footer/>
     </div>
