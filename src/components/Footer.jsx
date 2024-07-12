@@ -1,20 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 import {FaFacebook,FaTwitter,FaInstagram} from "react-icons/fa"
 import {FaLinkedinIn} from "react-icons/fa6"
+import { ThemeContext } from '../context/ThemeContext';
 const Footer = () => {
+  const {isDarkMode} = useContext(ThemeContext)
   return (
     <footer>
       <div className="container mx-auto p-5">
         <div className='flex justify-between p-5 items-center flex-wrap gap-5 border-b py-5'>
-          <div>
-            <div className='flex items-center'>
+          <div className='flex flex-col gap-1'>
+            <div className='flex items-center gap-1'>
               <img src="./logo.png" alt="logo" width={60} />
               <h1 className='text-3xl font-bold font-serif'>SimPlus+</h1>
             </div>
             <p>By Desprin Enterprises Private Limited</p>
           </div>
-          <button className='flex items-center gap-4 px-6 py-2 bg-gray-900 text-white rounded-full'>
+          <button className={`flex items-center gap-4 px-6 py-2 ${isDarkMode ? 'bg-white text-gray-900':'bg-gray-900 text-white'} rounded-full`}>
             Register Now
             <FaArrowRightLong />
           </button>
@@ -43,7 +45,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='container mx-auto p-5  flex flex-wrap gap-3 justify-between items-center'>
-        <div className='flex gap-5 flex-wrap font-bold text-gray-500  '>
+        <div className='flex gap-5 flex-wrap font-bold   '>
           <p >© TechSimPlus Official 2024</p>
           <p>Privacy Policy</p>
         </div>

@@ -12,7 +12,13 @@
 nav{
   animation: navAnim 0.5s linear;
 }
+.student{
+  border-top-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+  box-shadow: 1px 1px 10px hsla(0,0%,60%,.22);
+ 
 
+}
 @keyframes navAnim {
   0%{
     transform:translateY(-100%) ;
